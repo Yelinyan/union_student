@@ -1,10 +1,16 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+
+gem 'rails_admin'
+gem 'cancan'
+gem 'rolify'
+gem 'devise'
+gem 'paperclip'
 
 
 # Use sqlite3 as the database for Active Record
