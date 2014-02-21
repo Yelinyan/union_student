@@ -1,5 +1,5 @@
 class DisplayPagesController < ApplicationController
   def home
-  	@carousel=Carousel.find(1)
+  	@carousel=Carousel.all
   end
 end
