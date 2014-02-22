@@ -1,4 +1,5 @@
 UnionStudent::Application.routes.draw do
+  resources :articles
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root to: 'display_pages#home'
