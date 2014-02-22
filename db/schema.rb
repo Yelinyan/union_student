@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140221163015) do
+ActiveRecord::Schema.define(version: 20140222164641) do
+
+  create_table "articles", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.date     "time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "belong"
+  end
 
   create_table "carousels", force: true do |t|
     t.string   "describe"
@@ -58,5 +67,21 @@ ActiveRecord::Schema.define(version: 20140221163015) do
   end
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
+
+  create_table "xshactivities", force: true do |t|
+    t.string   "title"
+    t.date     "time"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "xyactivities", force: true do |t|
+    t.string   "title"
+    t.date     "time"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

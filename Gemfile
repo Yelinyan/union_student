@@ -11,6 +11,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'devise'
 gem 'paperclip'
+gem 'ckeditor'
 
 
 # Use sqlite3 as the database for Active Record
