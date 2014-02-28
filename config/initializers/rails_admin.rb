@@ -5,7 +5,6 @@ RailsAdmin.config do |config|
 	  field :title, :string
       field :content, :ck_editor
 	  field :time,:date
-	  field :belong,:string
       # For RailsAdmin < 0.5.0
       # field :description do
       #   ckeditor true
