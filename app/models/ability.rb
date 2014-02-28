@@ -29,12 +29,12 @@ class Ability
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
 
-    can :read, :all                   # allow everyone to read everything
+    can :read, [Article,Carousel,User]                   # allow everyone to read everything
     if user.has_role? :admin
       can :access, :rails_admin       # only allow admin users to access Rails Admin
       can :dashboard                  # allow access to dashboard
-      can :manage, :all             # allow superadmins to do anything
-      
+      can :manage, [Article]
+      can :update, [Carousel] 
     end
   end
 end
