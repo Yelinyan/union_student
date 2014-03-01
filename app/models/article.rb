@@ -1,4 +1,4 @@
 class Article < ActiveRecord::Base
-	has_many :belongs
-#	validates :belongs, :presence => true
+	belongs_to :belong
+#	validates :belong, :presence => true
 end
