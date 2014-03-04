@@ -12,6 +12,7 @@ gem 'rolify'
 gem 'devise'
 gem 'paperclip'
 gem 'ckeditor'
+gem 'carrierwave'
 
 
 # Use sqlite3 as the database for Active Record

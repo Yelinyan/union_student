@@ -32,42 +32,15 @@
     <div class="ui tiny list">
     <div class="ui top attached purple label">西南财经大学会计学院学生会活动</div>
     <br></br>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">Thanks for being my owner</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">What a walk</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="map icon"></i>
-      <div class="content">
-          <a class="header">Sorry about your old dog</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">Thanks for being my owner</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">What a walk</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="map icon"></i>
-      <div class="content">
-          <a class="header">Sorry about your old dog</a>
-      </div>
-  </div>
+    <% @article1.each do |t| %>
+        <div class="item">
+          <i class="list icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
+  
         </div>
   </div>
   </div>
@@ -76,24 +49,14 @@
     <div class="ui tiny list">
     <div class="ui top attached red label">通知公告</div>
     <br></br>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">Thanks for being my owner</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">What a walk</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="map icon"></i>
-      <div class="content">
-          <a class="header">Sorry about your old dog</a>
-      </div>
-  </div>
+      <% @article3.each do |t| %>
+        <div class="item">
+          <i class="list icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
         </div>
   </div>
   </div>
@@ -102,42 +65,14 @@
     <div class="ui tiny list">
     <div class="ui top attached purple label">西南财经大学会计学院活动</div>
     <br></br>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">Thanks for being my owner</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">What a walk</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="map icon"></i>
-      <div class="content">
-          <a class="header">Sorry about your old dog</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">Thanks for being my owner</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="mail outline icon"></i>
-      <div class="content">
-          <a class="header">What a walk</a>
-      </div>
-  </div>
-  <div class="item">
-      <i class="map icon"></i>
-      <div class="content">
-          <a class="header">Sorry about your old dog</a>
-      </div>
-  </div>
+      <% @article2.each do |t| %>
+        <div class="item">
+          <i class="list icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
         </div>
   </div>
   </div>

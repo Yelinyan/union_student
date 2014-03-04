@@ -1,0 +1,24 @@
+
+<div class="ui grid">
+	<div class="four wide column">
+		<div class="ui center aligned red segment">
+			<div class="ui red top attached label"></div>
+			</br>
+			<strong><%= @time %></strong>
+		</div>
+	</div>
+	<div class="twelve wide column">
+		<div class="ui purple segment">
+			<div class="ui tiny list">
+			<% @downloadfile.each do |t| %>
+				<div class="item">
+					<i class="download icon"></i>
+					<div class="content">
+						 <%= link_to t.title,{:action=>"down",:id=>t.id}%>
+					</div>
+				</div>
+			<% end %>
+			</div>
+		</div>
+	</div>
+</div>

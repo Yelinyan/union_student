@@ -2,6 +2,10 @@ UnionStudent::Application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root to: 'display_pages#home'
+  match '/download', to: 'display_pages#download', via: 'get'
+  match '/contribute', to: 'display_pages#contribute', via: 'get'
+  match '/about', to: 'display_pages#about', via: 'get'
+  match '/display', to: 'display_pages#display', via: 'get'
   get ':controller(/:action(/:id(.:format)))' => 'articles/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
