@@ -13,6 +13,9 @@ gem 'devise'
 gem 'paperclip'
 gem 'ckeditor'
 gem 'carrierwave'
+gem 'kaminari'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 # Use sqlite3 as the database for Active Record

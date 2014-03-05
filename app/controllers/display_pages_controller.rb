@@ -16,17 +16,17 @@ class DisplayPagesController < ApplicationController
 
 
   def display
-  	@article=Belong.find_by(name:"团学风采").articles
+  	@article=Belong.find_by(name:"团学风采").articles.paginate(:page => params[:page], :per_page => 25)
 	@time=(Time.now).strftime("%Y年%m月%d日%H:%M:%S");
   end
 
   def contribute
-  	@article=Belong.find_by(name:"班级建设").articles
+  	@article=Belong.find_by(name:"班级建设").articles.paginate(:page => params[:page], :per_page => 25)
 	@time=(Time.now).strftime("%Y年%m月%d日%H:%M:%S");
   end
 
   def download
-  	@downloadfile=DownLoadFile.all
+  	@downloadfile=DownLoadFile.all.paginate(:page => params[:page], :per_page => 25)
 	@time=(Time.now).strftime("%Y年%m月%d日%H:%M:%S");
   end
 
