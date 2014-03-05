@@ -12,6 +12,7 @@ RailsAdmin.config do |config|
     end
   end
   ### Popular gems integration
+  config.included_models = ['Article','Belong','Carousel','DownLoadFile']
 
   ## == Devise ==
    config.authenticate_with do

@@ -2,6 +2,7 @@ UnionStudent::Application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root to: 'display_pages#home'
+  mount Ckeditor::Engine => '/ckeditor'
   match '/download', to: 'display_pages#download', via: 'get'
   match '/contribute', to: 'display_pages#contribute', via: 'get'
   match '/about', to: 'display_pages#about', via: 'get'
