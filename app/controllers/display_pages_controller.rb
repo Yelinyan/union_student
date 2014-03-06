@@ -7,6 +7,8 @@ class DisplayPagesController < ApplicationController
   end
   
   def about
+  	@article=Belong.find_by(name:"关于我们").articles.paginate(:page => params[:page], :per_page => 25)
+	@time=(Time.now).strftime("%Y年%m月%d日%H:%M:%S");
   end
 
 
