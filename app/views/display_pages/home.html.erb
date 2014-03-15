@@ -30,7 +30,7 @@
   <div class="ten wide column">
       <div class="ui piled segment">
     <div class="ui tiny list">
-    <div class="ui top attached purple label">学生会活动</div>
+    <div class="ui top attached purple label">学院动态</div>
     <br></br>
     <% @article1.each do |t| %>
         <div class="item">
@@ -63,9 +63,27 @@
   <div class="ten wide column">
       <div class="ui piled segment">
     <div class="ui tiny list">
-    <div class="ui top attached purple label">学院活动</div>
+    <div class="ui top attached purple label">团学风采</div>
     <br></br>
       <% @article2.each do |t| %>
+        <div class="item">
+          <i class="list icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
+        </div>
+  </div>
+  </div>
+  <div calss="six wide column"></div>
+
+   <div class="ten wide column">
+      <div class="ui piled segment">
+    <div class="ui tiny list">
+    <div class="ui top attached purple label">班级建设</div>
+    <br></br>
+      <% @article4.each do |t| %>
         <div class="item">
           <i class="list icon"></i>
           <div class="content">

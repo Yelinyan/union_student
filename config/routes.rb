@@ -7,6 +7,7 @@ UnionStudent::Application.routes.draw do
   match '/contribute', to: 'display_pages#contribute', via: 'get'
   match '/about', to: 'display_pages#about', via: 'get'
   match '/display', to: 'display_pages#display', via: 'get'
+  match '/activity', to: 'display_pages#activity', via: 'get'
   get ':controller(/:action(/:id(.:format)))' => 'articles/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
