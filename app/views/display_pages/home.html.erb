@@ -43,25 +43,7 @@
   
         </div>
   </div>
-  </div>
-  <div class="six wide column">
-      <div class="ui piled segment">
-    <div class="ui tiny list">
-    <div class="ui top attached red label">通知公告</div>
-    <br></br>
-      <% @article3.each do |t| %>
-        <div class="item">
-          <i class="list icon"></i>
-          <div class="content">
-             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
-          </div>
-        </div>
-      <% end %>
-        </div>
-  </div>
-  </div>
-  <div class="ten wide column">
-      <div class="ui piled segment">
+    <div class="ui piled segment">
     <div class="ui tiny list">
     <div class="ui top attached purple label">团学风采</div>
     <br></br>
@@ -75,10 +57,6 @@
       <% end %>
         </div>
   </div>
-  </div>
-  <div calss="six wide column"></div>
-
-   <div class="ten wide column">
       <div class="ui piled segment">
     <div class="ui tiny list">
     <div class="ui top attached purple label">班级建设</div>
@@ -94,6 +72,36 @@
         </div>
   </div>
   </div>
-  <div calss="six wide column"></div>
+  <div class="six wide column">
+      <div class="ui piled segment">
+        <div class="ui tiny list">
+          <div class="ui top attached red label">通知公告</div>
+           <br></br>
+      <% @article3.each do |t| %>
+        <div class="item">
+          <i class="list icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"showarticle",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
+          </div>
+    </div>
+    <div class="ui piled segment">
+    <div class="ui tiny list">
+    <div class="ui top attached red label">下载中心</div>
+    <br></br>
+      <% @files.each do |t| %>
+        <div class="item">
+          <i class="download icon"></i>
+          <div class="content">
+             <%= link_to t.title,{:action=>"down",:id=>t.id} %>
+          </div>
+        </div>
+      <% end %>
+        </div>
+  </div>
+  </div>
+
   
         </div>

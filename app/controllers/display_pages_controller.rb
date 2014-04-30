@@ -5,6 +5,7 @@ class DisplayPagesController < ApplicationController
   	@article2=Belong.find_by(name:"团学风采").articles.limit(7)
   	@article3=Belong.find_by(name:"通知公告").articles.limit(3)
     @article4=Belong.find_by(name:"班级建设").articles.limit(7)
+	@files=DownLoadFile.all.limit(3)
 
   end
 
