@@ -102,7 +102,6 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-pjax (0.7.0)
@@ -193,7 +192,6 @@ DEPENDENCIES
   jquery-rails
   kaminari
   paperclip
-  pg
   rails (= 4.0.1)
   rails_admin
   rolify
